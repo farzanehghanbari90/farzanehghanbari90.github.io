@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact</title> <!-- Page title -->
+    <!-- Google Fonts for 'Poppins' font that used in style.css file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet for hamberger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header section with navigation -->
+    <header>
+        <div class="header-container">
+            <!-- Top Navigation Menu -->
+            <!-- link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+            <div class="topnav">
+                <h2>Farzaneh</h2>  <!-- Title left menu -->
+                <button id="theme-toggle">🌙</button>  <!-- Theme toggle button -->
+                <div id="myLinks" style="display: none;">
+                    <!--Don't show menu in default status-->
+                    <a href="../MyWebsite/index.html">Home</a>           <!--Link to Home page-->
+                    <a href="../MyWebsite/gallery.html">Gallery</a>    <!--Link to Projects page-->
+                    <a href="../MyWebsite/Interests.html">Interests</a>  <!--Link to Interests page-->
+                    <a href="../MyWebsite/Researches.html">Researches</a><!--Link to Researches page-->
+                    <a href="../MyWebsite/contact.html">Contact</a>      <!--Link to Contact page-->
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <!-- href="javascript:void(0);" prevents the link from navigating anywhere (used for JavaScript actions only) -->
+                    <i class="fa fa-bars"></i>
+                    <!--  class="fa fa-bars" add a menu hamburger icon -->
+                </a>
+
+            </div>
+        </div>
+        <hr />
+    </header>
+
+    <!-- Main content section -->
+    <main class="container-contact">
+        <div class="contact-left">
+            <!-- display my potho on the left side of the page-->
+            <img src="images/feri.jpg" alt="My Photo" />
+        </div>
+
+        <div class="contact-right">
+            <!-- display personal contact information on the right side of the page-->
+            <h1>Contact Me</h1>
+            <p>If you'd like to get in touch, contact me using the details below:</p>
+            <div class="contact-info">
+                <ul>
+                    
+                   <!-- <li><strong>Phone:</strong> +1 (415) 123-4567</li>   --> 
+                    <li><strong>Email:</strong> farzane.qanbari@gmail.com</li>   
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank">
+                        <img src="./images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/YOUR_USERNAME" target="_blank">
+                        <img src="./images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/in/farzaneh-ghanbari-431960315/" target="_blank">
+                        <img src="./images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for dark mode and responsive menu -->
+    <script src="js/script.js"></script>
+</body>
+</html>

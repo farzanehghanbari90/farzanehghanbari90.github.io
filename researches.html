@@ -1,0 +1,63 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>My Researches</title> <!-- Page title -->
+    <!-- Google Fonts for 'Poppins' font that used in style.css file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet for hamberger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header section with navigation -->
+    <header>
+        <div class="header-container">
+            <!-- Top Navigation Menu -->
+            <!-- link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+            <div class="topnav">
+                <h2>Farzaneh</h2>  <!-- Title left menu -->
+                <button id="theme-toggle">🌙</button>  <!-- Theme toggle button -->
+                <div id="myLinks" style="display: none;">
+                    <!--Don't show menu in default status-->
+                    <a href="../MyWebsite/index.html">Home</a>           <!--Link to Home page-->
+                    <a href="../MyWebsite/gallery.html">Gallery</a>    <!--Link to Projects page-->
+                    <a href="../MyWebsite/Interests.html">Interests</a>  <!--Link to Interests page-->
+                    <a href="../MyWebsite/Researches.html">Researches</a><!--Link to Researches page-->
+                    <a href="../MyWebsite/contact.html">Contact</a>      <!--Link to Contact page-->
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <!-- href="javascript:void(0);" prevents the link from navigating anywhere (used for JavaScript actions only) -->
+                    <i class="fa fa-bars"></i>
+                    <!--  class="fa fa-bars" add a menu hamburger icon -->
+                </a>
+
+            </div>
+        </div>
+        <hr />
+    </header>
+
+    <!-- Main content section -->
+    <main class="container">
+        <h1>My Research Work</h1>
+        <p>I am currently working on various research projects as part of my Phd in AI. Below are some of my key research areas:</p>
+
+        <div class="research-project">
+            <h2>How to use Machine Learning AI in Unity! (ML-Agents)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zPFU30tbyKs?si=FOKMC8dzyMhfeNF2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="research-project">
+            <h2>No teachers, no homework: School solely uses AI to teach students</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wJsnlSiyH3Y?si=njdMStapGyDr4A1p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for dark mode and responsive menu -->
+    <script src="js/script.js"></script>
+</body>
+</html>

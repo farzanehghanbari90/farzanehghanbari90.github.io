@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title> <!-- Page title -->
+    <!-- Google Fonts for 'Poppins' font that used in style.css file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet for hamberger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header section with navigation -->
+    <header>
+        <div class="header-container">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <h2>Farzaneh</h2>  <!-- Title left menu -->
+                <button id="theme-toggle">🌙</button>  <!-- Theme toggle button -->
+                <div id="myLinks" style="display: none;">
+                    <!-- Don't show menu in default status -->
+                    <a href="../MyWebsite/index.html">Home</a>  <!-- Link to Home page -->
+                    <a href="../MyWebsite/gallery.html">Gallery</a>  <!-- Link to Projects page -->
+                    <a href="../MyWebsite/Interests.html">Interests</a>  <!-- Link to Interests page -->
+                    <a href="../MyWebsite/Researches.html">Researches</a>  <!-- Link to Researches page -->
+                    <a href="../MyWebsite/contact.html">Contact</a>  <!-- Link to Contact page -->
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <!-- href="javascript:void(0);" prevents the link from navigating anywhere (used for JavaScript actions only) -->
+                    <i class="fa fa-bars"></i>
+                    <!--  class="fa fa-bars" add a menu hamburger icon -->
+                </a>
+
+            </div>
+        </div>
+        <hr />
+    </header>
+
+    <!-- Main content section -->
+    <main class="container">
+        <h2>
+            My country
+        </h2>
+        <div class="gallery">
+            <img src="./images/11 (1).JPG" alt="Description 1">
+            <img src="./images/11 (2).JPG" alt="Description 2">
+            <img src="./images/11 (3).JPG" alt="Description 3">
+            <img src="./images/11 (4).JPG" alt="Description 4">
+            <img src="./images/11 (5).JPG" alt="Description 5">
+            <img src="./images/11 (6).JPG" alt="Description 6">
+            <img src="./images/11 (7).JPG" alt="Description 7">
+            
+        </div>
+        <p>Images sourced from <a href="https://www.instagram.com/your_source_page/" target="_blank">Instagram Page</a>.</p>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <hr />
+        <p>&copy; 2025 My Website | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for dark mode and responsive menu -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

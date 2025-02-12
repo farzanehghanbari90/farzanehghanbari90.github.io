@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title> <!-- Page title -->
+    <!-- Google Fonts for 'Poppins' font that used in style.css file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet for hamberger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <div class="header-container">
+            <!-- Top Navigation Menu -->
+            <!-- link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+            <div class="topnav">
+                <h2>Farzaneh</h2>  <!-- Title left menu -->
+                <button id="theme-toggle">🌙</button>  <!-- Theme toggle button -->
+                <div id="myLinks" style="display: none;">
+                    <!--Don't show menu in default status-->
+                    <a href="../MyWebsite/index.html">Home</a>           <!--Link to Home page-->
+                    <a href="../MyWebsite/Projects.html">Projects</a>    <!--Link to Projects page-->
+                    <a href="../MyWebsite/Interests.html">Interests</a>  <!--Link to Interests page-->
+                    <a href="../MyWebsite/Researches.html">Researches</a><!--Link to Researches page-->
+                    <a href="../MyWebsite/contact.html">Contact</a>      <!--Link to Contact page-->
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <!-- href="javascript:void(0);" prevents the link from navigating anywhere (used for JavaScript actions only) -->
+                    <i class="fa fa-bars"></i>
+                    <!--  class="fa fa-bars" add a menu hamburger icon -->
+                </a>
+
+            </div>
+        </div>
+        <hr />
+    </header>
+
+    <!-- Main content section -->
+    <main class="container">
+        <h1>My Projects</h1>
+        <p>Below are some of my personal and professional projects:</p>
+
+        <div class="project">
+            <h2>Project 1: Image Processing</h2>
+            <img src="images/image-processing.jpg" alt="Image Processing Project">
+            <p>This project involved the development of algorithms for image enhancement and feature extraction. I used machine learning techniques to process images efficiently.</p>
+        </div>
+        <hr />
+        <div class="project">
+            <h2>Project 2: Machine Learning</h2>
+            <img src="images/ml-project.jpg" alt="Machine Learning Project">
+            <p>This project was focused on training machine learning models for predictive analysis in healthcare data. I used Python, Scikit-learn, and TensorFlow for model development.</p>
+        </div>
+        <hr />
+        <div class="project">
+            <h2>Project 3: AI Chatbot</h2>
+            <img src="images/ai-chatbot.jpg" alt="AI Chatbot Project">
+            <p>This AI-based chatbot was developed using NLP techniques to assist with customer service in a business environment. The project utilized frameworks like TensorFlow and NLTK.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for dark mode and responsive menu -->
+    <script src="js/script.js"></script>
+</body>
+</html>

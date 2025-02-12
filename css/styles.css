@@ -1,0 +1,234 @@
+﻿body {
+    font-family: 'Poppins', sans-serif; /* Sets the font family for the pages */
+    margin: 0;                          /* Remove default margin from the body */
+    padding: 0;                         /* Remove default padding from the body */
+    background-color: white;            /* Set the background color to white for light mode */
+}
+
+/* Header Styling */
+header {
+    background: white; /* White background for header */
+    color: black; /* Black text color for header */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Header structure */
+.header-container {
+    display: flex;                   /* Use Flexbox to arrange items horizontally */
+    justify-content: space-between;  /* Place items at the edges with space between */
+    align-items: center;             /* Align items vertically to the center */
+    max-width: 1100px;               /* Set the maximum width of the header container */
+    margin: 0 auto;                  /* Center the header container horizontally */
+}
+
+/* Navigation menu */
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;           /* Ensures the navigation items are contained within the element */
+    background-color: white;    /* Set the background color to white */
+    position: relative;         /* Make sure the navigation menu is positioned relative to the container */
+    width: 100%;                /* Make the menu width 100% */
+}
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none; /* Hide the menu links initially */
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: black;          /* Set the link text color to black */
+        padding: 14px 16px;    /* Add padding around the links */
+        text-decoration: none; /* Remove underline from links */
+        font-size: 17px;       /* Set the font size for the links */
+        display: block;        /* Display each link as a block */
+    }
+
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            background: white; /* Set the hamburger menu background to white */
+            color: black;      /* Set the icon color to black */
+            display: block;    /* Make it a block element */
+            position: absolute;/* Position it absolutely */
+            right: 0;          /* Align it to the right side */
+            top: 0;            /* Align it to the top */
+        }
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: none; /* Remove background from the button */
+    border: none;     /* Remove border from the button */
+    font-size: 15px;  /* Set the font size for the button */
+    cursor: pointer;  /* Change the cursor to a pointer when hovering */
+}
+
+/* Main Content Styling */
+.container {
+    width: 60%; /* Set the container width to 60% of its parent */
+    text-align: center; /* Center align the text inside the container */
+    margin: 20px auto; /* 20px margin at the top and bottom, auto for horizontal centering */
+    padding: 50px; /* Add 50px padding inside the container */
+    border: solid 1px #d7cfcf; /* Add a solid border around the container with a light gray color */
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-contact {
+    display: flex; /* Use Flexbox to arrange children elements horizontally */
+    justify-content: space-between; /* Distribute space evenly between child elements */
+    align-items: center; /* Align items vertically in the center */
+    margin: 50px auto; /* 50px margin at top and bottom, centered horizontally */
+    padding: 50px; /* Add 50px of padding inside the container */
+    max-width: 900px; /* Set the maximum width of the container */
+    border: solid 1px #d7cfcf; /* Add a solid border with light gray color */
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-left {
+    flex: 1;            /* Allow the left section to take up equal space as the right section */
+    text-align: center; /* Center align text inside the left section */
+}
+
+.contact-right {
+    flex: 1;          /* Allow the right section to take up equal space as the left section */
+    padding: 20px;    /* Add 20px padding inside the right section */
+    text-align: left; /* Left-align the text inside the right section */
+}
+
+.contact-info ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding */
+    margin: 0;  /* Remove margin */
+}
+
+.contact-info li {
+    font-size: 18px; /* Set font size for the list items */
+    margin: 10px 0;  /* Add 10px margin above and below each list item */
+}
+
+    .contact-info li strong {
+        color: #333; /* Set color of the strong elements inside the list to dark gray */
+    }
+
+/* Footer Styling */
+footer {
+    background: white; /* Set the footer background to white */
+    padding: 5px; /* Add 5px padding inside the footer */
+    color: black; /* Set the footer text color to black */
+}
+
+/* Dark Mode Styling */
+.dark {
+    background: #121212; /* Set the background color to dark for dark mode */
+    color: white;        /* Set the text color to white in dark mode */
+}
+
+    /* Change all elements' color in dark mode */
+    .dark * {
+        background: #121212; /* Set background of all elements to dark */
+        color: white;        /* Set text color of all elements to white */
+    }
+
+    /* Change link color in dark mode */
+    .dark a {
+        color: #4da8da; /* Set link color to light blue in dark mode */
+    }
+    .dark ul li strong {
+        color: white;   /* Set strong color to light blue in dark mode */
+    }
+    .dark .topnav a.icon {
+        background: #121212; /* Set hamburger menu background to dark */
+        color: white;        /* Set icon color to white in dark mode */
+    }
+
+/* Responsive Navigation Menu */
+.menu-toggle {
+    display: none;      /* Hide the menu toggle button by default */
+    font-size: 24px;    /* Set font size for the menu toggle button */
+    background: none;   /* Remove background */
+    border: none;       /* Remove border */
+    cursor: pointer;    /* Change cursor to pointer on hover */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none; /* Hide the navigation menu by default on mobile */
+    }
+
+    .menu-toggle {
+        display: block;     /* Display the menu toggle button */
+        position: absolute; /* Position the button absolutely */
+        top: 20px;          /* Position it 20px from the top */
+        right: 20px;        /* Position it 20px from the right */
+    }
+
+    .mobile-menu {
+        display: none;      /* Hide the mobile menu by default */
+        position: absolute; /* Position the mobile menu absolutely */
+        background: white;  /* Set mobile menu background to white */
+        width: 100%;        /* Set mobile menu width to 100% */
+        top: 50px;          /* Position it 50px from the top */
+        left: 0;            /* Align it to the left */
+    }
+
+        .mobile-menu.active {
+            display: block; /* Show the mobile menu when it has the 'active' class */
+        }
+
+    /* Adjust contact section layout for mobile devices */
+    .container-contact {
+        flex-direction: column; /* Change layout to column direction */
+        align-items: center;    /* Center align content */
+    }
+
+    .contact-left, .contact-right {
+        flex: none;  /* Disable flex behavior */
+        width: 100%; /* Set each section to take 100% width */
+        text-align: center; /* Center align the text in both sections */
+    }
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+.social-icons a {
+    text-decoration: none;
+}
+.social-icons img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d7cfcf;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.social-icons img:hover{
+    transform: scale(1.2);
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
