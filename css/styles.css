@@ -153,6 +153,23 @@ footer {
     cursor: pointer;    /* Change cursor to pointer on hover */
 }
 
+/* 🔧 Fix: Responsive YouTube Video */
+.interest iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintain video aspect ratio */
+    max-width: 560px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 🔧 Fix: Ensure Video Containers Align Properly */
+.interest {
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
     .menu {
