@@ -170,6 +170,32 @@ footer {
     text-align: center;
 }
 
+/* 🔧 Fix: Responsive YouTube Video for Research Section */
+.research-project iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintain video aspect ratio */
+    max-width: 560px; /* Prevent videos from becoming too large on bigger screens */
+    display: block;
+    margin: 0 auto; /* Centers the video */
+}
+
+/* 🔧 Fix: Ensure Research Sections Align Properly */
+.research-project {
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .research-project iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
     .menu {
