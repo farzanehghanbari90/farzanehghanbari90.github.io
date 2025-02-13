@@ -153,7 +153,7 @@ footer {
     cursor: pointer;    /* Change cursor to pointer on hover */
 }
 
-/* 🔧 Fix: Responsive YouTube Video */
+/*  Responsive YouTube Video */
 .interest iframe {
     width: 100%;
     height: auto;
@@ -163,14 +163,14 @@ footer {
     margin: 0 auto;
 }
 
-/* 🔧 Fix: Ensure Video Containers Align Properly */
+/*  Ensure Video Containers Align Properly */
 .interest {
     max-width: 90%;
     margin: 20px auto;
     text-align: center;
 }
 
-/* 🔧 Fix: Responsive YouTube Video for Research Section */
+/*  Responsive YouTube Video for Research Section */
 .research-project iframe {
     width: 100%;
     height: auto;
@@ -180,7 +180,7 @@ footer {
     margin: 0 auto; /* Centers the video */
 }
 
-/* 🔧 Fix: Ensure Research Sections Align Properly */
+/* Ensure Research Sections Align Properly */
 .research-project {
     max-width: 90%;
     margin: 20px auto;
@@ -193,6 +193,21 @@ footer {
         max-width: 100%;
         height: auto;
     }
+}
+
+/* Center profile picture in index.html */
+.profile-pic {
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers image vertically (if needed) */
+    width: 100%;
+}
+
+.profile-pic img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Optional: Makes the image round */
 }
 
 
