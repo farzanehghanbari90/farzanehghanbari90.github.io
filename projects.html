@@ -5,7 +5,7 @@
     <title>My Projects</title> <!-- Page title -->
     <!-- Google Fonts for 'Poppins' font that used in style.css file -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Stylesheet for hamberger menu -->
+    <!-- Stylesheet for hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- External CSS file -->
     <link rel="stylesheet" href="css/styles.css">
@@ -14,25 +14,19 @@
     <!-- Header section with navigation -->
     <header>
         <div class="header-container">
-            <!-- Top Navigation Menu -->
-            <!-- link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
             <div class="topnav">
                 <h2>Farzaneh</h2>  <!-- Title left menu -->
                 <button id="theme-toggle">🌙</button>  <!-- Theme toggle button -->
                 <div id="myLinks" style="display: none;">
-                    <!--Don't show menu in default status-->
-                    <a href="../index.html">Home</a>           <!--Link to Home page-->
-                    <a href="../projects.html">Projects</a>    <!--Link to Projects page-->
-                    <a href="../interests.html">Interests</a>  <!--Link to Interests page-->
-                    <a href="../researches.html">Researches</a><!--Link to Researches page-->
-                    <a href="../contact.html">Contact</a>      <!--Link to Contact page-->
+                    <a href="../index.html">Home</a>
+                    <a href="../projects.html">Projects</a>
+                    <a href="../interests.html">Interests</a>
+                    <a href="../researches.html">Researches</a>
+                    <a href="../contact.html">Contact</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <!-- href="javascript:void(0);" prevents the link from navigating anywhere (used for JavaScript actions only) -->
                     <i class="fa fa-bars"></i>
-                    <!--  class="fa fa-bars" add a menu hamburger icon -->
                 </a>
-
             </div>
         </div>
         <hr />
@@ -59,6 +53,23 @@
             <h2>Project 3: AI Chatbot</h2>
             <img src="images/ai-chatbot.jpg" alt="AI Chatbot Project">
             <p>This AI-based chatbot was developed using NLP techniques to assist with customer service in a business environment. The project utilized frameworks like TensorFlow and NLTK.</p>
+        </div>
+        <hr />
+
+        <!-- Connect 4 Game Project -->
+        <div class="project">
+            <h2>Project 4: Connect 4 Game</h2>
+            <p>This is an interactive Connect 4 game implemented using JavaScript. You can play the game directly below or open it in full screen.</p>
+
+            <!-- Embed the game using an iframe -->
+            <iframe src="https://farzanehghanbari90.github.io/Connect4-Game/index.html" width="100%" height="600px" style="border: 2px solid black;"></iframe>
+
+            <!-- Button to open the game in a new tab -->
+            <p>
+                <a href="https://farzanehghanbari90.github.io/Connect4-Game/index.html" target="_blank" class="button">
+                    Open Full Screen
+                </a>
+            </p>
         </div>
 
     </main>
