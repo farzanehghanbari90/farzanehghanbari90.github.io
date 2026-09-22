@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farzaneh Ghanbari — Curriculum Vitae</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#5a5a5a; --rule:#d8d8d8; --accent:#1f3864; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0 auto; max-width:820px; padding:48px 24px 72px;
+    font-family:"Charter","Georgia","Times New Roman",serif;
+    font-size:16px; line-height:1.55; color:var(--ink); background:#fff;
+  }
+  header { border-bottom:2px solid var(--accent); padding-bottom:14px; margin-bottom:26px; }
+  h1 { font-size:30px; margin:0 0 6px; letter-spacing:.2px; color:var(--accent); }
+  .subtitle { font-size:15px; color:var(--muted); margin:0 0 10px; }
+  .contact { font-size:14px; color:var(--muted); margin:0; }
+  .contact a { color:var(--accent); text-decoration:none; }
+  .contact a:hover { text-decoration:underline; }
+  h2 {
+    font-size:13px; text-transform:uppercase; letter-spacing:1.4px;
+    color:var(--accent); margin:30px 0 10px; padding-bottom:5px;
+    border-bottom:1px solid var(--rule);
+  }
+  .entry { margin-bottom:16px; }
+  .entry-head { display:flex; justify-content:space-between; gap:16px; align-items:baseline; }
+  .role { font-weight:700; }
+  .where { font-style:italic; color:var(--muted); font-size:15px; }
+  .when { color:var(--muted); font-size:14px; white-space:nowrap; }
+  ul { margin:6px 0 0; padding-left:20px; }
+  li { margin-bottom:5px; }
+  p { margin:6px 0; }
+  .skills { display:grid; grid-template-columns:165px 1fr; gap:6px 12px; margin:6px 0 0; }
+  .skills dt { font-weight:700; }
+  .skills dd { margin:0; }
+  @media (max-width:560px) {
+    .skills { grid-template-columns:1fr; gap:2px; }
+    .skills dd { margin-bottom:8px; }
+    .entry-head { flex-direction:column; gap:0; }
+  }
+  mark { background:#fff3a3; padding:0 3px; }
+  footer { margin-top:36px; padding-top:12px; border-top:1px solid var(--rule);
+           font-size:13px; color:var(--muted); }
+  @media print {
+    body { padding:0; font-size:11pt; max-width:none; }
+    mark { background:none; }
+    h2 { margin-top:18px; }
+    .entry { page-break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Farzaneh Ghanbari</h1>
+  <p class="subtitle">Ph.D. Student, Department of Computer Science — New Mexico State University</p>
+  <p class="contact">
+    Las Cruces, NM 88003, USA &nbsp;·&nbsp; +1 (575) 332-1631 &nbsp;·&nbsp;
+    <a href="mailto:fgh@nmsu.edu">fgh@nmsu.edu</a><br>
+    <a href="https://github.com/farzanehghanbari90">github.com/farzanehghanbari90</a>
+    &nbsp;·&nbsp;
+    <a href="https://farzanehghanbari90.github.io">farzanehghanbari90.github.io</a>
+  </p>
+</header>
+
+<h2>Research Interests</h2>
+<p>
+  Knowledge tracing and student modeling; interpretability and faithfulness of deep sequential
+  models; educational data mining; the use of large language models to produce verifiable,
+  teacher-facing explanations of model predictions.
+</p>
+
+<h2>Education</h2>
+
+<div class="entry">
+  <div class="entry-head">
+    <span class="role">Ph.D. in Computer Science</span>
+    <span class="when">2025 – present</span>
+  </div>
+  <div class="where">New Mexico State University, Las Cruces, NM, USA</div>
+  <ul>
+    <li>Advisor: Dr. Christabel Wayllace</li>
+    <li>Dissertation area: interpretability and faithfulness of knowledge tracing models</li>
+    <li>Cumulative GPA: 4.00</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry-head">
+    <span class="role">M.Sc. in Computer Science (Scientific Computing)</span>
+    <span class="when">2013 – 2016</span>
+  </div>
+  <div class="where">Tarbiat Modares University, Tehran, Iran</div>
+  <ul>
+    <li>Thesis: a face recognition method based on sparse representation</li>
+    <li>Supervisor: Prof. Mansour Rezghi</li>
+    <li>Coursework and topics: sparse representation, classification, clustering algorithms, data mining</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry-head">
+    <span class="role">B.Sc. in Computer Science</span>
+    <span class="when">2008 – 2012</span>
+  </div>
+  <div class="where">Shahid Bahonar University of Kerman, Kerman, Iran</div>
+  <ul>
+    <li>Thesis: analysis, design and implementation of a hotel booking system using a software engineering approach</li>
+    <li>Supervisor: Prof. Mohamadreza Omidi</li>
+  </ul>
+</div>
+
+<h2>Research Experience</h2>
+
+<div class="entry">
+  <div class="entry-head">
+    <span class="role">Doctoral Researcher — Knowledge Tracing Interpretability</span>
+    <span class="when">2025 – present</span>
+  </div>
+  <div class="where">Department of Computer Science, New Mexico State University</div>
+  <ul>
+    <li>
+      Evaluating whether knowledge tracing models that claim interpretability — in particular
+      QIKT (AAAI 2023) and IKT (AAAI 2022) — are faithful at the level of individual students,
+      using the pykt-toolkit benchmarking framework on the ASSIST2009 dataset.
+    </li>
+    <li>
+      Designed and ran three original experimental studies: cold-start behavior of the model's
+      interpretability scores, the empirical semantics of its three internal prediction streams,
+      and assumption-breaking tests based on controlled edits to student response sequences.
+    </li>
+    <li>
+      Showed that the model's named interpretability scores are largely redundant, and that its
+      explanations are unstable during a student's early interactions even though predictive
+      accuracy (AUC) remains stable.
+    </li>
+    <li>
+      Built a pipeline that generates teacher-facing explanations from the model's internal
+      scores and validates LLM-generated explanations through hallucination checks, faithfulness
+      grading against measured correlation ceilings, and forbidden-claim detection.
+    </li>
+    <li>
+      Reproduced the MSKT metacognitive knowledge tracing model on the EdNet-KT4 dataset,
+      obtaining results close to those reported in the original paper.
+    </li>
+    <li>
+      Independently identified an implementation inconsistency in the published QIKT source code
+      and overparameterization in one of its modules.
+    </li>
+    <li>Experiments run on a multi-GPU Linux cluster (NVIDIA H100) using PyTorch and conda environments.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry-head">
+    <span class="role">M.Sc. Research — Sparse Representation for Face Recognition</span>
+    <span class="when">2013 – 2016</span>
+  </div>
+  <div class="where">Tarbiat Modares University, Tehran, Iran</div>
+  <ul>
+    <li>
+      Developed and evaluated a face recognition method based on sparse representation,
+      combining dictionary-based classification with clustering techniques.
+    </li>
+  </ul>
+</div>
+
+<h2>Teaching Experience</h2>
+
+<div class="entry">
+  <div class="entry-head">
+    <span class="role">Graduate Teaching Assistant</span>
+    <span class="when">Fall 2025 – present</span>
+  </div>
+  <div class="where">Department of Computer Science, New Mexico State University</div>
+  <ul>
+    <li>Discrete Mathematics — Fall 2026</li>
+    <li>Assembly Language Programming — Spring 2026</li>
+    <li>Assembly Language Programming and Operating Systems I — Fall 2025</li>
+    <li>
+      Graded assignments and exams, held regular office hours, and assisted students
+      during lab sessions.
+    </li>
+  </ul>
+</div>
+
+<h2>Other Professional Experience</h2>
+
+<div class="entry">
+  <div class="entry-head">
+    <span class="role">Data Collection Assistant</span>
+    <span class="when">2025</span>
+  </div>
+  <div class="where">Department of Mathematics, New Mexico State University</div>
+</div>
+
+<h2>Publications</h2>
+<p><em>No peer-reviewed publications to date.</em></p>
+
+<h2>Research Software and Other Intellectual Products</h2>
+<ul>
+  <li>
+    Evaluation code built on the pykt-toolkit for analyzing QIKT interpretability: cold-start
+    analysis, stream-semantics analysis, and sequence-edit experiments.
+    <em>(Not yet publicly released.)</em>
+  </li>
+  <li>
+    A pipeline for generating and validating LLM-based teacher-facing explanations from
+    knowledge tracing model outputs.
+  </li>
+  <li>Reproduction of the MSKT model on EdNet-KT4.</li>
+  <li>
+    Qualifying exam report and presentation analyzing and comparing the IKT (AAAI 2022) and
+    QIKT (AAAI 2023) papers.
+  </li>
+</ul>
+
+<h2>Technical Skills</h2>
+<dl class="skills">
+  <dt>Primary languages</dt>
+  <dd>Python, C, C++, Java, MATLAB</dd>
+  <dt>Machine learning</dt>
+  <dd>PyTorch, pykt-toolkit, scikit-learn, NumPy, pandas</dd>
+  <dt>Model families</dt>
+  <dd>CNNs, RNNs and LSTMs, Transformers, GANs, diffusion models, graph neural networks</dd>
+  <dt>Tools &amp; environments</dt>
+  <dd>Linux, conda, Git and GitHub, Docker, GPU/HPC clusters (NVIDIA H100), LaTeX</dd>
+  <dt>Databases</dt>
+  <dd>MySQL, SQL Server</dd>
+  <dt>Web</dt>
+  <dd>HTML5, CSS3, JavaScript</dd>
+  <dt>Languages</dt>
+  <dd>Persian (native), English</dd>
+</dl>
+
+<footer>
+  Last updated: September 2026
+</footer>
+
+</body>
+</html>
